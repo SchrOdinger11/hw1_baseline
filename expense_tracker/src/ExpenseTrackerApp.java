@@ -1,3 +1,4 @@
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -6,7 +7,7 @@ import javax.swing.table.DefaultTableModel;
 public class ExpenseTrackerApp {
 
   public static void main(String[] args) {
-    
+    boolean exception=false;
     // Create MVC components
     DefaultTableModel tableModel = new DefaultTableModel();
     tableModel.addColumn("Serial");
@@ -25,14 +26,61 @@ public class ExpenseTrackerApp {
     view.getAddTransactionBtn().addActionListener(e -> {
       
       // Get transaction data from view
-      double amount = view.getAmountField(); 
-      String category = view.getCategoryField();
+       double amount=0;String category="";
+      try{
+           amount = view.getAmountField(); 
+       category = view.getCategoryField();
+      }catch (Exception e1){
+        
+        System.out.println("The following is exception is thrown due to mismatch in the input data- "+e1);
+        //display Exception here 
+
+                    JOptionPane.showMessageDialog(
+                null, 
+                "An error occurred: " + e1+" Please enter an integer or decimal value in Amount section and a string in category section", 
+                "Error", 
+                JOptionPane.ERROR_MESSAGE
+
+            );
+            
+
+      }
+
+      
+
+      InputValidation inputValidation=new InputValidation(amount,category);
 
       // Create transaction object
-      Transaction t = new Transaction(amount, category);
+      String  cat="c";
+      String amt="c";
+      try {
+        amt = inputValidation.checkAmount();
+      } catch (CreateException e1) {
+        // TODO Auto-generated catch block
+    
+      }
+      try{
+       cat =inputValidation.checkCategory();
+      }catch(CreateException e1){
+ 
+      }
+      if(cat.equals(" ") && amt.equals(" ")){
+       
+       Transaction t = new Transaction(amount, category);
+       view.addTransaction(t);
+      }
+      else {
+       JOptionPane.showMessageDialog(
+                null, 
+                "An error occurred: " + amt+" "+cat, 
+                "Error", 
+                JOptionPane.ERROR_MESSAGE);
+   
+      }
+      
 
       // Call controller to add transaction
-      view.addTransaction(t);
+      
     });
 
   }
