@@ -15,7 +15,7 @@ public class ExpenseTrackerApp {
     tableModel.addColumn("Category");
     tableModel.addColumn("Date");
     
-
+    
     
     ExpenseTrackerView view = new ExpenseTrackerView(tableModel);
 
@@ -36,13 +36,8 @@ public class ExpenseTrackerApp {
         System.out.println("The following is exception is thrown due to mismatch in the input data- "+e1);
         //display Exception here 
 
-                    JOptionPane.showMessageDialog(
-                null, 
-                "An error occurred: " + e1+" Please enter an integer or decimal value in Amount section and a string in category section", 
-                "Error", 
-                JOptionPane.ERROR_MESSAGE
+        view.throwError(e1, "", "");
 
-            );
             
 
       }
@@ -72,11 +67,8 @@ public class ExpenseTrackerApp {
        view.addTransaction(t);
       }
       else {
-       JOptionPane.showMessageDialog(
-                null, 
-                "An error occurred: " + amt+" "+cat, 
-                "Error", 
-                JOptionPane.ERROR_MESSAGE);
+
+        view.throwError(null, cat, amt);
    
       }
       

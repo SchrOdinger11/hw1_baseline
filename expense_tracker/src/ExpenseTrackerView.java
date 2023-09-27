@@ -87,6 +87,26 @@ public class ExpenseTrackerView extends JFrame {
     setVisible(true);
   
   }
+  public String throwError(Exception e,String cat,String amt){
+    if(e instanceof NumberFormatException){
+    JOptionPane.showMessageDialog(
+      null, 
+      "An error occurred: " + e+" Please enter an integer or decimal value in Amount section and a string in category section", 
+      "Error", 
+      JOptionPane.ERROR_MESSAGE
+    
+
+  );
+    }
+    else{
+      JOptionPane.showMessageDialog(
+        null, 
+        "An error occurred: " + amt+" "+cat, 
+        "Error", 
+        JOptionPane.ERROR_MESSAGE);
+    }
+    return "";
+  }
 
   public void refreshTable(List<Transaction> transactions) {
       // model.setRowCount(0);
