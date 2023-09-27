@@ -1,0 +1,78 @@
+commit 9e9c9dae93d0e00599b78be5c560514fd1aa7deb
+Author: Manas Wadhwa <mnswdhw@Manass-MacBook-Pro.local>
+Date:   Wed Sep 27 17:43:38 2023 -0400
+
+    removed apache ant from files from commit
+
+commit 30031022f222483a53a2d968f12c2b05630a0736
+Author: Manas Wadhwa <mnswdhw@Manass-MacBook-Pro.local>
+Date:   Wed Sep 27 17:39:46 2023 -0400
+
+    Jdoc support added and removed apache ant files
+
+commit 1c887b122572dcb4c6036d786d3a8fb1e6c91bc2
+Author: SchrOdinger11 <sudhanshu.kulkarni2105@gmail.com>
+Date:   Wed Sep 27 17:14:41 2023 -0400
+
+     Migrated error handling to the View component
+
+commit 56a072ab73df31af6f647662826c7b544c44ef42
+Author: SchrOdinger11 <sudhanshu.kulkarni2105@gmail.com>
+Date:   Wed Sep 27 15:57:09 2023 -0400
+
+    Added Jdoc Support
+
+commit 4e2c30d8d63d92aa185b546555408a340524cde9
+Author: SchrOdinger11 <sudhanshu.kulkarni2105@gmail.com>
+Date:   Wed Sep 27 15:24:49 2023 -0400
+
+    Comitting part2
+
+commit bd1430119b0ed013c35960530c4ce16db69ea189
+Author: Sudhanshu Kulkarni <sudhanshu.kulkarni2105@gmail.com>
+Date:   Tue Sep 26 15:14:50 2023 -0400
+
+    added exception for incorrect range values
+
+commit 4aba3f306ce156c0a3995c72fae604e5c4dd4839
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Thu Sep 21 16:16:51 2023 -0400
+
+    Readme Update
+
+commit e6b5eef3e2cf2bd38bd2482b633c8f670c56b3b9
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Wed Sep 20 21:34:40 2023 -0400
+
+    Readme Update
+
+commit 8c41e8002d1ab37af47d259a2dd7f02033c69d72
+Merge: d3a5c14 34bd5aa
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Wed Sep 20 21:32:44 2023 -0400
+
+    Merge branch 'main' of https://github.com/CS520-Fall2023/hw1_baseline
+
+commit d3a5c14b35628fc5ad47068443af4e5960043c39
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Wed Sep 20 21:31:49 2023 -0400
+
+    Readme Update
+
+commit 34bd5aa0313f8c07c903f01e68ae0489f89e3d87
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Mon Sep 18 10:44:46 2023 -0400
+
+    Readme Update
+
+commit 72141cc496980da67e34cc8676331c48e912ec41
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Mon Sep 18 02:14:52 2023 -0400
+
+    HW1 file updates
+
+commit ed592ee28b697f1c2464703f0b53618bb653c017
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Mon Sep 18 02:13:24 2023 -0400
+
+    Initial commit
