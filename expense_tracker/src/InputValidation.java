@@ -1,6 +1,7 @@
 import java.util.HashSet;
 import javax.swing.JOptionPane;
 
+//custom exception class to create an exception incase of incorrect data 
 class CreateException extends Exception{
            public CreateException() {
         super();
@@ -13,6 +14,7 @@ class CreateException extends Exception{
     public CreateException(String message, Throwable cause) {
         super(message, cause);
     }
+
 }
 public class InputValidation  {
 
@@ -21,6 +23,7 @@ public class InputValidation  {
     public static void main(String[] args) {
         
     }
+    //constructor to initialize the InputValidation object
     InputValidation(double a, String c){
            System.out.println("Came here");
         amount=a;

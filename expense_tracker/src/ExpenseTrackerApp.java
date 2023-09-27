@@ -27,6 +27,7 @@ public class ExpenseTrackerApp {
       
       // Get transaction data from view
        double amount=0;String category="";
+       //Try catch block to ensure that amount and category have correct values stored in them.
       try{
            amount = view.getAmountField(); 
        category = view.getCategoryField();
@@ -53,6 +54,7 @@ public class ExpenseTrackerApp {
       // Create transaction object
       String  cat="c";
       String amt="c";
+      //check if the cat and amt variables have valid input as spcified in the document.
       try {
         amt = inputValidation.checkAmount();
       } catch (CreateException e1) {
